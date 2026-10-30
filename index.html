@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>becaus — video &amp; text pin wall</title>
+<meta name="description" content="Discover UGC and influencer video inspiration. Save ideas and explore a world of creator content with becaus, a Janrise company.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="brand" id="brand" aria-label="becaus home"><strong>becaus</strong><span>Distribution<br>Performance</span></button>
+  <div class="search" id="search">
+    <span data-icon="search" data-size="21"></span>
+    <input id="q" aria-label="Search pins" placeholder="Find your next good idea" value="">
+    <button id="clearQ" aria-label="Clear search" hidden><span data-icon="x" data-size="18"></span></button>
+  </div>
+  <button class="top-about" id="aboutTop">About</button>
+  <button class="lets-play" id="playTop">Let’s play</button>
+</header>
+
+<aside class="rail">
+  <button id="railExplore" aria-label="Explore" title="Explore"></button>
+  <button id="railSaved" aria-label="Saved pins" title="Saved pins"></button>
+  <button id="railShuffle" aria-label="Shuffle feed" title="Shuffle feed"><span data-icon="shuffle" data-size="23"></span></button>
+  <button id="railAbout" class="rail-info" aria-label="About becaus" title="About becaus"><span data-icon="info" data-size="24"></span></button>
+</aside>
+
+<main>
+  <div class="toolbar">
+    <div class="tabs" id="tabs"></div>
+    <div class="tools">
+      <button id="filterBtn" aria-label="Filter pins"><span data-icon="sliders" data-size="21"></span></button>
+      <button id="autoplayBtn"></button>
+    </div>
+  </div>
+  <div class="filters" id="filters" hidden></div>
+  <div class="wall" id="wall"></div>
+  <div class="empty" id="empty" hidden>
+    <span data-icon="squares" data-size="35"></span>
+    <h2 id="emptyTitle"></h2>
+    <p id="emptyText"></p>
+    <button id="emptyBack">Back to the lobby</button>
+  </div>
+  <div class="sentinel" id="sentinel"><span id="sentinelText"></span></div>
+</main>
+
+<div id="modalRoot"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
