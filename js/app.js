@@ -308,7 +308,7 @@
       <div class="creator-categories">${CATS.slice(1).map(c => `<button data-cc="${c}">${c}</button>`).join("")}</div>
       <p class="fine">Creator registration will be available when the platform launches.</p>`;
     return `
-      <span class="wordmark">becaus</span>
+      <img class="wordmark" src="images/becaus-logo.png" alt="becaus — Instant Influence">
       <span class="modal-kicker">DISTRIBUTION PERFORMANCE</span>
       <h2>Good content.<br>Great company.</h2>
       <p>Creators move culture. This is a place for brands, creators and good ideas to find each other.</p>
