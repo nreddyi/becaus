@@ -1,4 +1,4 @@
-:root{font-family:Arial,Helvetica,sans-serif;color:#111;background:#fff;font-synthesis:none;--yellow:#ffd126}
+:root{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;font-synthesis:none;--yellow:#ffd126;--ink:#092124}
 *{box-sizing:border-box}
 body{margin:0}
 button,input,a{-webkit-tap-highlight-color:transparent}
@@ -15,20 +15,20 @@ svg{flex-shrink:0}
 .brand strong,.wordmark{font-size:39px;letter-spacing:-2.7px;font-weight:900}
 .brand>span{border-left:1px solid #aaa;padding-left:12px;font-size:11px;line-height:1.15;text-align:left}
 .search{display:flex;align-items:center;gap:11px;background:#efefef;border-radius:30px;min-width:0;height:49px;flex:1;padding:0 19px;color:#777}
-.search input{border:0;outline:0;background:none;width:100%;font-size:15px;min-width:0;color:#111}
+.search input{border:0;outline:0;background:none;width:100%;font-size:15px;min-width:0;color:var(--ink)}
 .search:focus-within{outline:3px solid #e7c332}
 .search input::placeholder{color:gray}
 .search button{display:flex;padding:2px}
 .top-about{font-size:14px;font-weight:700}
-.lets-play{background:#111;color:#fff;border-radius:30px;padding:15px 22px;font-size:14px;white-space:nowrap;font-weight:700}
-.lets-play:hover{background:#333}
+.lets-play{background:var(--ink);color:#fff;border-radius:30px;padding:15px 22px;font-size:14px;white-space:nowrap;font-weight:700}
+.lets-play:hover{background:#163c41}
 
 /* Left rail */
 .rail{position:fixed;left:0;top:91px;bottom:0;width:79px;border-right:1px solid #eee;background:#fff;display:flex;flex-direction:column;align-items:center;gap:18px;padding:27px 0;z-index:4}
 .rail>button{width:46px;height:46px;display:flex;align-items:center;justify-content:center;border-radius:15px;position:relative}
 .rail>button:hover{background:#f1f1f1}
 .rail>button.active{background:var(--yellow)}
-.rail small{position:absolute;right:0;top:0;background:#111;color:#fff;border:2px solid #fff;border-radius:20px;font-size:10px;min-width:18px;height:18px;display:grid;place-items:center}
+.rail small{position:absolute;right:0;top:0;background:var(--ink);color:#fff;border:2px solid #fff;border-radius:20px;font-size:10px;min-width:18px;height:18px;display:grid;place-items:center}
 .rail .rail-info{margin-top:auto}
 
 /* Main + toolbar */
@@ -37,7 +37,7 @@ main{margin:91px 0 0 79px;padding:0 24px 30px}
 .tabs{display:flex;gap:5px;overflow:auto;scrollbar-width:none}
 .tabs button{white-space:nowrap;padding:11px 16px;font-size:14px;font-weight:600;border-radius:25px;position:relative}
 .tabs button:hover{background:#f4f4f4}
-.tabs button.selected{background:#111;color:#fff}
+.tabs button.selected{background:var(--ink);color:#fff}
 .tools{display:flex;gap:9px;flex-shrink:0}
 .tools button{width:38px;height:38px;border-radius:50%;display:grid;place-items:center}
 .tools button:hover,.tools button.active{background:#f0f0f0}
@@ -54,10 +54,10 @@ main{margin:91px 0 0 79px;padding:0 24px 30px}
 .video-open video{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .pin-media:hover video{transform:scale(1.025)}
 .format{position:absolute;top:15px;left:13px;color:#fff;font-size:11px;font-weight:600;text-shadow:0 1px 5px #000}
-.video-play{position:absolute;bottom:15px;left:13px;width:32px;height:32px;background:#ffffffea;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#111}
+.video-play{position:absolute;bottom:15px;left:13px;width:32px;height:32px;background:#ffffffea;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--ink)}
 .category{position:absolute;bottom:22px;left:53px;font-weight:700;font-size:11px;color:#fff;text-transform:uppercase;letter-spacing:.4px;text-shadow:0 1px 6px #000}
 .mute{position:absolute;bottom:18px;right:13px;color:#fff;filter:drop-shadow(0 1px 3px #000)}
-.save{position:absolute;top:10px;right:10px;background:#fff;color:#111;border-radius:50%;width:33px;height:33px;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .15s}
+.save{position:absolute;top:10px;right:10px;background:#fff;color:var(--ink);border-radius:50%;width:33px;height:33px;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .15s}
 .pin-media:hover .save,.text-card:hover .save,.save.saved,.save:focus-visible{opacity:1}
 .save.saved{background:var(--yellow)}
 .pin-caption{padding:10px 6px 0}
@@ -67,17 +67,17 @@ main{margin:91px 0 0 79px;padding:0 24px 30px}
 
 /* Text cards */
 .text-card{border-radius:16px;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:22px 19px;min-height:235px}
-.text-card.yellow{background:var(--yellow);color:#080808}
-.text-card.black{background:#101010;color:#fff}
-.text-card.white{background:#f2f1ed;color:#111}
+.text-card.yellow{background:var(--yellow);color:var(--ink)}
+.text-card.black{background:var(--ink);color:#fff}
+.text-card.white{background:#f2f1ed;color:var(--ink)}
 .pin-eyebrow{font-size:9px;letter-spacing:1.6px;font-weight:700;line-height:1.4;max-width:90%}
 .text-card h2{white-space:pre-line;font-weight:900;font-size:clamp(30px,3.15vw,58px);letter-spacing:-2px;line-height:.98;margin:25px 0 23px;overflow-wrap:normal}
 .text-bottom{margin-top:auto}
 .text-bottom p{font-size:11px;line-height:1.45;margin:0;max-width:160px}
-.pin-cta{background:#101010;color:#fff;border-radius:24px;padding:11px 14px;font-size:11px;font-weight:700;margin-top:16px;width:100%;transition:transform .15s}
-.black .pin-cta{background:#fff;color:#111}
+.pin-cta{background:var(--ink);color:#fff;border-radius:24px;padding:11px 14px;font-size:11px;font-weight:700;margin-top:16px;width:100%;transition:transform .15s}
+.black .pin-cta{background:#fff;color:var(--ink)}
 .pin-cta:hover{transform:translateY(-2px)}
-.text-card .save.saved{background:#fff;color:#111}
+.text-card .save.saved{background:#fff;color:var(--ink)}
 
 .sentinel{display:grid;place-items:center;min-height:60px;color:#888;font-size:12px}
 .empty{padding:90px 20px;text-align:center}
@@ -86,7 +86,7 @@ main{margin:91px 0 0 79px;padding:0 24px 30px}
 .empty button{background:var(--yellow);padding:14px 20px;border-radius:30px;margin-top:10px}
 
 /* Dialogs */
-.overlay{position:fixed;inset:0;background:#0009;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);z-index:20;display:flex;align-items:center;justify-content:center;padding:24px}
+.overlay{position:fixed;inset:0;background:#092124a6;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);z-index:20;display:flex;align-items:center;justify-content:center;padding:24px}
 .dialog{background:#fff;border-radius:24px;position:relative;width:600px;max-width:100%;padding:48px;max-height:90vh;overflow:auto}
 .close{position:absolute;top:15px;right:15px;z-index:2;background:#fff;border:1px solid #eee;width:36px;height:36px;border-radius:50%;display:grid;place-items:center}
 .modal-kicker{display:block;font-size:11px;letter-spacing:1.5px;font-weight:700;margin:10px 0 20px;color:#777}
@@ -94,7 +94,7 @@ main{margin:91px 0 0 79px;padding:0 24px 30px}
 .dialog p{font-size:16px;line-height:1.6;color:#666}
 .dialog .fine{font-size:12px;color:#999;margin-top:25px;line-height:1.65}
 .video-dialog{display:flex;width:850px;padding:0;overflow:hidden}
-.video-dialog>video{width:49%;max-height:85vh;object-fit:contain;background:#111}
+.video-dialog>video{width:49%;max-height:85vh;object-fit:contain;background:var(--ink)}
 .video-details{flex:1;padding:50px 30px}
 .video-details h2{font-size:33px;letter-spacing:-1px}
 .video-details a{display:flex;gap:6px;font-size:12px;align-items:center;color:#666}
@@ -107,11 +107,11 @@ main{margin:91px 0 0 79px;padding:0 24px 30px}
 .creator-categories button{border-radius:25px;background:var(--yellow);padding:13px 18px;font-size:14px;font-weight:700}
 .game-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:27px 0 20px}
 .game-grid button{aspect-ratio:1;background:var(--yellow);border-radius:12px;font-size:36px;font-weight:900}
-.game-grid button.flipped{background:#111;color:#fff;font-size:14px}
+.game-grid button.flipped{background:var(--ink);color:#fff;font-size:14px}
 .game-grid button.matched{background:#efefeb;color:#777;font-size:14px}
 .game-score{display:flex;align-items:center;justify-content:space-between;font-size:13px}
 .game-score button{font-weight:700;text-decoration:underline}
-.dialog .success{font-size:14px;color:#444}
+.dialog .success{font-size:14px;color:var(--ink)}
 .wordmark{display:block}
 
 /* Responsive */
